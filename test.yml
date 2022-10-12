@@ -1,0 +1,18 @@
+---
+test:
+  config:
+    abc: name1
+    xyz: name2
+  name:
+    name1: shrey
+    name2: aakash
+  attributes:
+      name: batch16
+      CIDR: 10.0.0.0/16
+      AZ: ap-southeast-1
+      tags:
+          env: dev
+          owner: sandeep@opstree.com
+  output:
+      - cidr
+      - name

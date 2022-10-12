@@ -1,0 +1,12 @@
+Resources:
+  type:
+    ResourceType: IGW
+    state: present
+  attributes:
+      name: batch16IGW
+  tags:
+      type: internetGateway
+      owner: sandeep@opstree.com
+  output:
+      - 
+      - 

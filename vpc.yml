@@ -1,0 +1,16 @@
+---
+Resources:
+  type:
+    ResourceType: VPC
+    state: present
+  attributes:
+      name: batch16
+      CIDR: 10.0.0.0/16
+      reigon: ap-south-1
+  tags:
+      env: dev
+      owner: sandeep@opstree.com
+  output:
+      - cidr
+      - name
+      - vpcId
