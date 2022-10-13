@@ -8,5 +8,5 @@ Resources:
       type: internetGateway
       owner: sandeep@opstree.com
   output:
-      - 
-      - 
+      - IgwId
+  

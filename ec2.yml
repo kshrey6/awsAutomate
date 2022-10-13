@@ -1,0 +1,20 @@
+---
+Resources:
+  type:
+    ResourceType: EC2
+    state: present
+  attributes:
+      name: batch16RouteEC2
+      imgName: customami1
+
+      count: 1
+      instanceType: t2.micro
+      keyName: mumbai
+      subnetName: batch16Subnet
+  tags:
+      env: dev
+      owner: sandeep@opstree.com
+  output:
+      - CIDR
+      - name
+      - subnetId

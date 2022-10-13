@@ -1,0 +1,18 @@
+---
+Resources:
+  type:
+    ResourceType: RouteTable
+    state: present
+  attributes:
+      name: batch16RouteTable
+      association: batch16Subnet
+      AZ: ap-south-1a
+      dest-cidr-block: 0.0.0.0/0
+      igwName: batch16IGW
+  tags:
+      env: dev
+      owner: sandeep@opstree.com
+  output:
+      - CIDR
+      - name
+      - subnetId

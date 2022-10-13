@@ -1,16 +1,16 @@
 ---
 Resources:
   type:
-    ResourceType: VPC
+    ResourceType: Subnet
     state: present
   attributes:
-      name: batch16
-      CIDR: 10.0.0.0/16
-      reigon: ap-south-1
+      name: batch16Subnet
+      CIDR: 10.0.128.0/18
+      AZ: ap-south-1a
   tags:
       env: dev
       owner: sandeep@opstree.com
   output:
       - CIDR
       - name
-      - vpcId
+      - subnetId
